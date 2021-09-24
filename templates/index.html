@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+    <div class="text-slider col-12 bg-primary">
+        <div class="typing-slider">
+            <p id="animation_text"></p><p id="text_typing" style="margin-left: -12px">|</p>
+        </div>
+
+    </div>
+    <h2 class="current-stats bg-primary w-100 d-none">{{ current }}</h2>
+</div>
+<script src="{{ url_for('static', filename='slider.js') }}"></script>
+{% endblock %}
