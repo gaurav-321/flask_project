@@ -35,7 +35,7 @@ class User(db.Model):
 
 @app.route('/')
 def home_page():
-    return render_template("index.html", current=10)
+    return render_template("index.html", current=110)
 
 
 @app.route("/login", methods=['POST', 'GET'])
